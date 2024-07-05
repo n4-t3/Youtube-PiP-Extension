@@ -19,17 +19,13 @@
       "128": "images/128x128.png"
     }
   },
-  "background": {
-    "service_worker": "background.js",
-    "type": "module"
-  },
   "content_scripts": [
     {
       "matches": ["https://*.youtube.com/watch*"],
       "js": ["content.js"]
     }
   ],
-  "permissions": ["activeTab", "tabs"],
+  "permissions": ["activeTab", "tabs", "scripting"],
   "web_accessible_resources": [
     {
       "resources": ["images/PiP.svg"],

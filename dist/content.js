@@ -23,14 +23,6 @@ PiPButton.onclick = () => {
     }
 };
 rightControls === null || rightControls === void 0 ? void 0 : rightControls.appendChild(PiPButton);
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    if (message.response === "enabled") {
-        chrome.runtime.sendMessage({ response: "enable" });
-    }
-    else {
-        chrome.runtime.sendMessage({ response: "disable" });
-    }
-});
 
 /******/ })()
 ;
